@@ -6,16 +6,25 @@
 }
 
 /*  General */
+html,body{
+  height: 100%;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   background: #EBFEF7;   /*  verde muy claro */
   color: #033d2d;        /* texto en verde grisáceo oscuro */
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
 /* Header & Nav  */
 header {
-  background: #045043;   /* 🎨 verde oscuro */
+  background: #045043;   /*  verde oscuro */
   color: white;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -54,6 +63,8 @@ main {
   max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1rem;
+
+  flex: 1;
 }
 
 section {
@@ -153,7 +164,8 @@ footer {
   padding: 1rem;
   background: #012D27;  
   color: white;
-  margin-top: 2rem;
   font-size: 0.9rem;
   border-radius: 8px 8px 0 0;
+  margin-top: auto;
+  width: 100%;
 }
