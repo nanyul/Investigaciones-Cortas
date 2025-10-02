@@ -309,6 +309,25 @@ footer {
 
 /* Mejora específica para la navegación con muchos elementos */
 @media (max-width: 480px) {
+
+  
+  body {
+    padding-top: 180px; /* espacio extra para el header fijo en móviles */
+  }
+
+  html {
+    scroll-padding-top: 180px; /* mejora navegación con anclas */
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+
   nav ul {
     gap: 0.3rem;
   }
