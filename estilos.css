@@ -29,6 +29,14 @@ header {
   padding: 1.5rem 1rem;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+
+  
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  */
 }
 
 header h1 {
@@ -139,6 +147,46 @@ img {
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
+
+/*Tabla*/
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+thead {
+  background: #045043; /* Verde oscuro */
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9; /* Alterna filas */
+}
+
+tbody tr:hover {
+  background: #D0FBE9; /* Verde claro al pasar el mouse */
+}
+
+th {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
 
 /* Citas  */
 blockquote {
