@@ -336,4 +336,70 @@ footer {
     padding: 0.3rem 0.5rem;
     font-size: 0.85rem;
   }
+
+
+    /* Tabla adaptable con scroll horizontal */
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  border-collapse: collapse;
 }
+
+/* Estilo opcional para mejorar el scroll visual */
+table::-webkit-scrollbar {
+  height: 6px;
+}
+
+table::-webkit-scrollbar-thumb {
+  background: #0ABF93;
+  border-radius: 3px;
+}
+}
+
+
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+
+  thead {
+    display: none; /* ocultamos encabezado para móviles */
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    font-weight: bold;
+    color: #045043;
+  }
+}
+
