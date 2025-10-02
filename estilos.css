@@ -14,13 +14,12 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   background: #EBFEF7;   /*  verde muy claro */
-  color: #033d2d;        /* texto en verde grisáceo oscuro */
+  color: #033d2d;        /* texto en verde grisÃ¡ceo oscuro */
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
-  padding-top: 140px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
 /* Header & Nav  */
@@ -30,14 +29,6 @@ header {
   padding: 1.5rem 1rem;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
 }
 
 header h1 {
@@ -92,7 +83,7 @@ section {
 h2 {
   margin-bottom: 1rem;
   color: #007C64; /*  verde fuerte */
-  font-size: 1.4rem; /* Ajustado para móviles */
+  font-size: 1.4rem; /* Ajustado para mÃ³viles */
 }
 
 h3 {
@@ -118,7 +109,7 @@ li {
   line-height: 1.5;
 }
 
-/* Código en casillas */
+/* CÃ³digo en casillas */
 pre {
   background: #1a201f;   /*  verde casi negro */
   color: #EBFEF7;        /* texto claro */
@@ -127,7 +118,7 @@ pre {
   overflow-x: auto;
   margin: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  font-size: 0.85rem;  /* Tamaño reducido para móviles */
+  font-size: 0.85rem;  /* TamaÃ±o reducido para mÃ³viles */
 }
 
 code {
@@ -138,7 +129,7 @@ code {
   word-wrap: break-word;
 }
 
-/* Imágenes */
+/* ImÃ¡genes */
 img {
   display: block;
   margin: 1rem auto;
@@ -186,6 +177,7 @@ th {
   font-weight: bold;
   font-size: 1rem;
 }
+
 
 
 /* Citas  */
@@ -236,7 +228,7 @@ footer {
 
 
 
-/* MEDIA QUERIES PARA DIFERENTES TAMAÑOS DE PANTALLA */
+/* MEDIA QUERIES PARA DIFERENTES TAMAÃ‘OS DE PANTALLA */
 
 /* Tabletas */
 @media (min-width: 768px) {
@@ -258,7 +250,7 @@ footer {
   }
   
   p {
-    text-align: justify; /* Reactivamos justificado en pantallas más grandes */
+    text-align: justify; /* Reactivamos justificado en pantallas mÃ¡s grandes */
   }
   
   pre {
@@ -277,13 +269,12 @@ footer {
   }
   
   img {
-    max-width: 80%; /* Imágenes un poco más grandes en desktop */
+    max-width: 80%; /* ImÃ¡genes un poco mÃ¡s grandes en desktop */
   }
 }
 
-/* Móviles muy pequeños (menos de 360px) */
+/* MÃ³viles muy pequeÃ±os (menos de 360px) */
 @media (max-width: 359px) {
-  
   header h1 {
     font-size: 1.3rem;
   }
@@ -307,26 +298,8 @@ footer {
   }
 }
 
-/* Mejora específica para la navegación con muchos elementos */
+/* Mejora especÃ­fica para la navegaciÃ³n con muchos elementos */
 @media (max-width: 480px) {
-  
-  body {
-    padding-top: 140px; /* espacio extra para el header fijo en móviles */
-  }
-
-  html {
-    scroll-padding-top: 180px; /* mejora navegación con anclas */
-  }
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-
   nav ul {
     gap: 0.3rem;
   }
@@ -336,41 +309,3 @@ footer {
     font-size: 0.85rem;
   }
 }
-
-
-
-@media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
-    display: none; /* ocultamos encabezado para móviles */
-  }
-
-  tr {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-
-  td {
-    text-align: left;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 1rem;
-    top: 0.8rem;
-    font-weight: bold;
-    color: #045043;
-  }
-}
-
