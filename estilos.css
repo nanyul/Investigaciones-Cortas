@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  padding-top: 140px; /* Relleno superior igual a la altura de la cabecera*/
+  padding-top: 160px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
 /* Header & Nav  */
