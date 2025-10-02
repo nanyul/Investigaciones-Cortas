@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
+  padding-top: 140px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
 /* Header & Nav  */
@@ -31,12 +32,12 @@ header {
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 
   
-  /*position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  */
+
 }
 
 header h1 {
