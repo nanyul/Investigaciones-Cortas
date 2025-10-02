@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  padding-top: 160px; /* Relleno superior igual a la altura de la cabecera*/
+  padding-top: 140px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
 /* Header & Nav  */
@@ -188,7 +188,6 @@ th {
 }
 
 
-
 /* Citas  */
 blockquote {
   border-left: 5px solid #0ABF93;
@@ -284,6 +283,7 @@ footer {
 
 /* Móviles muy pequeños (menos de 360px) */
 @media (max-width: 359px) {
+  
   header h1 {
     font-size: 1.3rem;
   }
@@ -309,10 +309,9 @@ footer {
 
 /* Mejora específica para la navegación con muchos elementos */
 @media (max-width: 480px) {
-
   
   body {
-    padding-top: 180px; /* espacio extra para el header fijo en móviles */
+    padding-top: 140px; /* espacio extra para el header fijo en móviles */
   }
 
   html {
@@ -336,26 +335,6 @@ footer {
     padding: 0.3rem 0.5rem;
     font-size: 0.85rem;
   }
-
-
-    /* Tabla adaptable con scroll horizontal */
-table {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  max-width: 100%;
-  border-collapse: collapse;
-}
-
-/* Estilo opcional para mejorar el scroll visual */
-table::-webkit-scrollbar {
-  height: 6px;
-}
-
-table::-webkit-scrollbar-thumb {
-  background: #0ABF93;
-  border-radius: 3px;
-}
 }
 
 
@@ -365,14 +344,6 @@ table::-webkit-scrollbar-thumb {
     display: block;
     width: 100%;
   }
-
-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 100%;
-  }
-
 
   thead {
     display: none; /* ocultamos encabezado para móviles */
