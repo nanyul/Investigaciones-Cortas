@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación 3: Accesibilidad Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Investigación 3: Accesibilidad Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#que-es">¿Qué es la Accesibilidad Web?</a></li>
+                <li><a href="#importancia">Importancia</a></li>
+                <li><a href="#principios">Principios de las WCAG</a></li>
+                <li><a href="#ejemplo">Ejemplo Práctico</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ¿Qué es la Accesibilidad Web?  -->
+        <section id="que-es" class="card">
+            <h2>¿Qué es la Accesibilidad Web?</h2>
+            <p>
+                La <strong>accesibilidad web</strong> es el conjunto de principios, técnicas y buenas prácticas que
+                garantizan que
+                las personas con distintas capacidades (visuales, auditivas, motoras o cognitivas) puedan percibir,
+                comprender, navegar e interactuar con los sitios web sin barreras.
+            </p>
+            <blockquote>
+                “La accesibilidad web permite que las personas con discapacidad utilicen la web en igualdad de
+                condiciones con los demás” (W3C, 2018).
+            </blockquote>
+        </section>
+
+        <!-- Importancia-->
+        <section id="importancia" class="card">
+            <h2>Importancia de la Accesibilidad Web</h2>
+            <p>
+                Implementar accesibilidad web no solo responde a una obligación ética y legal, sino que también
+                mejora la calidad del código, la experiencia del usuario y el alcance de la información publicada.
+                Un sitio accesible beneficia a todas las personas, incluyendo a quienes usan dispositivos móviles,
+                conexiones lentas o presentan limitaciones temporales.
+            </p>
+            <blockquote>
+                “Accessible design is good design — it benefits people with disabilities and everyone else” (Henry,
+                2022).
+            </blockquote>
+            <p>
+                Además, en muchos países las normativas legales, como la Ley 7600 en Costa Rica, promueven la igualdad
+                de oportunidades mediante el acceso digital inclusivo, lo cual fomenta la participación plena en la
+                sociedad.
+            </p>
+        </section>
+
+        <!--Principios-->
+        <section id="principios" class="card">
+            <h2>Principios de las WCAG</h2>
+            <p>
+                Las <strong>Web Content Accessibility Guidelines (WCAG)</strong> establecen cuatro principios
+                fundamentales que todo sitio web debe cumplir para ser accesible:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Principio</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Perceptible</strong></td>
+                        <td>La información y los componentes deben presentarse de modo que todos los usuarios puedan
+                            percibirlos.</td>
+                        <td>Usar texto alternativo (<code>alt</code>) en imágenes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operable</strong></td>
+                        <td>La interfaz debe ser manejable por teclado, y los elementos deben tener tiempo suficiente
+                            para usarse.</td>
+                        <td>Permitir la navegación con <kbd>Tab</kbd> y <kbd>Enter</kbd>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comprensible</strong></td>
+                        <td>El contenido debe presentarse de forma clara y predecible.</td>
+                        <td>Usar lenguaje sencillo y etiquetas coherentes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Robusto</strong></td>
+                        <td>El contenido debe ser compatible con diversas tecnologías, incluidos los lectores de
+                            pantalla.</td>
+                        <td>Usar etiquetas semánticas HTML5 y atributos ARIA adecuados.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Ejemplo practico-->
+        <section id="ejemplo" class="card">
+            <h2>Ejemplo Práctico de Accesibilidad Web</h2>
+            <p>
+                A continuación se muestra una sección de contacto diseñada aplicando los cuatro principios de las WCAG.
+            </p>
+
+            <pre><code>
+                &lt;section aria-labelledby="titulo-contacto"&gt;
+                &lt;h2 id="titulo-contacto"&gt;Contáctenos&lt;/h2&gt;
+                &lt;p&gt;Complete el siguiente formulario. Los campos marcados con * son obligatorios.&lt;/p&gt;
+
+                &lt;form aria-describedby="ayuda-formulario"&gt;
+                &lt;label for="nombre"&gt;Nombre completo *&lt;/label&gt;
+                &lt;input type="text" id="nombre" name="nombre" required aria-required="true"&gt;
+
+                &lt;label for="correo"&gt;Correo electrónico *&lt;/label&gt;
+                &lt;input type="email" id="correo" name="correo" required aria-required="true"&gt;
+
+                &lt;label for="mensaje"&gt;Mensaje *&lt;/label&gt;
+                &lt;textarea id="mensaje" name="mensaje" required aria-required="true"&gt;&lt;/textarea&gt;
+
+                &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                &lt;/form&gt;
+
+                &lt;p id="ayuda-formulario"&gt;
+                Puede usar la tecla &lt;kbd&gt;Tab&lt;/kbd&gt; para moverse entre los campos y &lt;kbd&gt;Enter&lt;/kbd&gt; para enviar.
+                &lt;/p&gt;
+                &lt;/section&gt;
+            </code></pre>
+
+            <h3>Explicación</h3>
+            <ul>
+                <li><strong>Perceptible:</strong> Se utilizan etiquetas y descripciones claras para los campos.</li>
+                <li><strong>Operable:</strong> Se puede navegar completamente con el teclado.</li>
+                <li><strong>Comprensible:</strong> Instrucciones claras y estructura ordenada.</li>
+                <li><strong>Robusto:</strong> Compatible con lectores de pantalla y tecnologías asistivas.</li>
+            </ul>
+        </section>
+
+        <!-- Referencia -->
+        <section id="referencias" class="card">
+            <h2>Referencias</h2>
+            <ul>
+                <li><a href="https://www.w3.org/TR/WCAG21/" target="_blank">W3C (2018)</a></li>
+                <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank">
+                        Henry, S. L. (2022)</a></li>
+                <li><a href="https://www.w3.org/WAI/" target="_blank">World Wide Web Consortium (2020)</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Investigación 3: Accesibilidad Web </p>
+    </footer>
+</body>
+
+</html>
